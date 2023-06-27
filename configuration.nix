@@ -15,6 +15,7 @@
     ./modules/users.nix
     ./modules/nvidia.nix
     ./modules/i3.nix
+    ./home-manager/home.nix
   ];
 
   # Bootloader.
