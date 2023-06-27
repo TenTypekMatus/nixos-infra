@@ -14,6 +14,7 @@
     ./modules/svc.nix
     ./modules/users.nix
     ./modules/nvidia.nix
+    ./modules/i3.nix
   ];
 
   # Bootloader.
