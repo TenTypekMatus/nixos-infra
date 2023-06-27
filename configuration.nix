@@ -13,17 +13,15 @@
     ./modules/maintainance.nix
     ./modules/svc.nix
     ./modules/users.nix
+    ./modules/nvidia.nix
   ];
 
   # Bootloader.
   services.gnome.gnome-keyring.enable = true;
   networking.enableIPv6 = false;
   # Setup keyfile
-  boot.initrd.secrets = {
-    "/crypto_keyfile.bin" = null;
-  };
 
-  networking.hostName = "MatuusBook"; # Define your hostname.
+  networking.hostName = "MatuusPC"; # Define your hostname.
 
   # Enable networking
   networking.networkmanager.enable = true;
