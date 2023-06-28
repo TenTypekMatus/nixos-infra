@@ -7,10 +7,11 @@
       vim-fugitive
       tabby-nvim
       ultisnips
-    vim-snippets
+      vim-snippets
       nord-nvim
       ale
-      lightline-vim
+      lualine-nvim
+      nvim-lspconfig
       vim-devicons
       ansible-vim
       vim-autoformat
@@ -25,9 +26,7 @@
       nvim-whichkey-setup-lua
       nvim-lspconfig
       vim-startify
-      coc-snippets
-      vim-airline-themes
-#      barbar-nvim
+      barbar-nvim
       wilder-nvim
       supertab
     ];
@@ -49,9 +48,10 @@
       \ }))
       let g:deoplete#enable_at_startup = 1
       set signcolumn=yes
-      let g:lightline = {
-      \ 'colorscheme': 'nord',
-      \ }
+      lua << END
+      require('lualine').setup()
+      END
+      lua require('lspconfig').vls.setup{}
       set noshowmode
       " returns all modified files of the current git repo
       " `2>/dev/null` makes the command fail quietly, so that when we are not
