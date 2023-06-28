@@ -48,17 +48,10 @@
       \ }))
       let g:deoplete#enable_at_startup = 1
       set signcolumn=yes
-      lua require('lualine').setup
-      lua require'lspconfig'.vls.setup{}
-      lua <<EOF
-      lspconfig.rust_analyzer.setup {
-      -- Server-specific settings. See `:help lspconfig-setup`
-      settings = {
-      ['rust-analyzer'] = {},
-      },
-      }
-
-      EOF
+      lua << END
+      require('lualine').setup()
+      END
+      lua require('lspconfig').vls.setup{}
       set noshowmode
       " returns all modified files of the current git repo
       " `2>/dev/null` makes the command fail quietly, so that when we are not
