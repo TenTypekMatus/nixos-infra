@@ -8,6 +8,7 @@
     python311Packages.pynvim
     python310Packages.setuptools
     python310Packages.pip
+    gnome.file-roller
     deluge
     freetube
     ansible
@@ -19,6 +20,8 @@
     acpi
     iw
     pfetch
+    obs-studio
+    kdenlive
     nordic
     protonmail-bridge
     yarn
@@ -42,7 +45,8 @@
     jetbrains.idea-community
     vlang
     prismlauncher
-    rustup
+    rustc
+    cargo
     gcc
     gnumake
     spotify
@@ -50,5 +54,6 @@
     vlang
     swayidle
     swaylock-fancy
+    transmission
   ];
 }
