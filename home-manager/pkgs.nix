@@ -28,7 +28,6 @@
     bat
     python311Packages.pynvim
     xorg.xprop
-    pantheon.wingpanel-with-indicators
     lua
     swaybg
     lollypop
